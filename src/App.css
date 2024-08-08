@@ -29,3 +29,7 @@ body {
   background-color: #9a39e8;
   transition: background-color 0.3s ease;
 }
+.text-xxs {
+  font-size: 0.65rem;
+
+}

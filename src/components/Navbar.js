@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../components/images/logo.png";
+
 import { HiOutlineSearch } from "react-icons/hi";
 import "../App.css";
 const Navbar = () => {
@@ -12,14 +12,14 @@ const Navbar = () => {
 
   return (
     <div className="container">
-      <nav className="fixed top-0 left-0 w-full z-10 h-18 bg-black bg-opacity-10 text-white font-normal border-b-2 border-gray-600 uppercase backdrop-blur-sm">
-        <div className="container mx-auto px-[8%] py-[1%] flex justify-between items-center">
+      <nav className="fixed top-0 left-0 w-full z-10 h-18 bg-black  text-sm bg-opacity-10 text-white font-normal border-b-2 border-gray-600 uppercase backdrop-blur-sm">
+        <div className=" mx-auto px-[8%] py-[1%] flex justify-between items-center">
           <div className="flex items-center pr-5 pt-1">
-            <img src={Logo} alt="Logo" className="h-10" />
+            <img src="/images/logo.png" alt="Logo" className="h-7" />
           </div>
 
-          <div className="hidden lg:flex space-x-40 items-center">
-            <ul className="flex space-x-6 items-center">
+          <div className="hidden lg:flex space-x-28 items-center">
+            <ul className="flex space-x-10 items-center">
               <li className="hover-custom" style={gradientTextStyle}>
                 Home
               </li>
@@ -32,7 +32,7 @@ const Navbar = () => {
             <div className="flex items-center space-x-1 relative ml-20">
               <HiOutlineSearch className="w-5 h-5 text-white" />
               <div className="h-[30px] w-[1px] bg-gray-300 mx-2"></div>
-              <button className="relative bg-[#7828d6] text-white px-6 py-2 rounded-full button-hover font-semibold">
+              <button className="relative bg-[#7828d6] text-white px-6 py-2 rounded-full text-xs button-hover font-semibold">
                 Apply Now
               </button>
             </div>

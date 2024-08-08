@@ -1,5 +1,5 @@
 import "./App.css";
-import bgImage from "./components/images/bg1.png";
+
 import Navbar from "./components/Navbar";
 import Section1 from "./components/Section1";
 import Section2 from "./components/Section2";
@@ -11,6 +11,7 @@ import Section7 from "./components/Section7";
 import Section8 from "./components/Section8";
 import Section9 from "./components/Section9";
 import Section10 from "./components/Section10";
+import Section11 from "./components/Section11";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
       <div
         className="mt-[1%] mx-auto h-screen flex items-center justify-center"
         style={{
-          backgroundImage: `url(${bgImage})`,
+          backgroundImage: `url(${process.env.PUBLIC_URL}/images/bg1.png)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -35,6 +36,7 @@ function App() {
       <Section8 />
       <Section9 />
       <Section10 />
+      <Section11 />
     </div>
   );
 }
